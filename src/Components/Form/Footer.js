@@ -2,9 +2,9 @@ import React from "react";
 const Footer = () => {
   return (
     <div>
-      <div className="row">
+      <div className="row pb-3">
         <div className="col iconClass">
-          <p className="text-secondary">Create account with</p>
+          <p className="text-secondary fw-bold">Create account with</p>
           <ul>
             <li>
               <a href="#">

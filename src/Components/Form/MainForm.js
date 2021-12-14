@@ -41,7 +41,7 @@ const MainForm = () => {
   return (
     <div className="container">
       <form onSubmit={handleLoginForm}>
-        <div class="mb-3">
+        <div class="pb-3">
           <label for="exampleInputName1" class="form-label fw-bold">
             Name
           </label>
@@ -50,12 +50,12 @@ const MainForm = () => {
             name="name"
             class="form-control"
             id="exampleInputName1"
-            placeholder="Enter Name"
+            placeholder="Enter First Name"
             required
             onBlur={handleBlur}
           />
         </div>
-        <div class="mb-3">
+        <div class="py-3">
           <label for="exampleInputEmail1" class="form-label fw-bold">
             Email address
           </label>
@@ -69,7 +69,7 @@ const MainForm = () => {
             onBlur={handleBlur}
           />
         </div>
-        <div class="mb-3">
+        <div class="py-3">
           <label for="exampleInputPassword1" class="form-label fw-bold">
             Password
           </label>
@@ -77,15 +77,17 @@ const MainForm = () => {
             type="password"
             name="password"
             class="form-control"
-            id="exampleInputPassword1"
+            id="password"
             placeholder="8+ characters"
             required
             onBlur={handleBlur}
           />
         </div>
-        <button type="submit" class="btn customButton loginButton">
-          Login
-        </button>
+        <div class="py-3">
+          <button type="submit" class="btn customButton loginButton fw-bold">
+            Login
+          </button>
+        </div>
       </form>
     </div>
   );
